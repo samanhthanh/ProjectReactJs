@@ -62,8 +62,11 @@ const Home = () => {
                         <td>{p.lastName}</td>
                         <td>{p.emailId}</td>         
                         <td>
-                          <Link to={`/add/${p.id}`} className="btn btn-sm btn-primary">
+                          <Link to={'edit/'+p.id} className="btn btn-sm btn-primary">
                             Edit
+                          </Link>
+                          <Link to={'/'+p.id} className="btn btn-sm btn-info ms-1">
+                            Detail
                           </Link>
                           <button
                             onClick={() => deleteProduct(p.id)}

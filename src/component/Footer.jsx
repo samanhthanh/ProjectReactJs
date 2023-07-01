@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
     <footer className='footer'>
-        <span>All Right Reserved &copy; {new Date().getFullYear()}</span>
+        <span>All Right Reserved &copy; {new Date().getFullYear()}-{new Date().getMonth()}-{new Date().getDay()}</span>
     </footer>
 </div>
   )

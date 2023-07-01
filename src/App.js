@@ -7,6 +7,9 @@ import Addproduct from './component/Addproduct';
 import Test from './component/Test';
 import Footer from './component/Footer';
 import Login from './component/Login';
+import EditProduct from './component/EditProduct';
+import ProductDetail from './component/ProductDetail'
+import Login1 from './component/Login1';
 
 function App() {
   return (
@@ -15,8 +18,9 @@ function App() {
       <Route path='/' element={<Home />}></Route>
       <Route path='/add' element={<Addproduct/>} ></Route>
       <Route path="/login" element={<Login />} ></Route>
-      <Route path="/add/:id" element={<Addproduct />} />
-      
+      <Route path="/login1" element={<Login1 />} ></Route>
+      <Route path="/edit/:id" element={<EditProduct />} />
+      <Route path="/:id" element={<ProductDetail />} />
     </Routes>
     <Footer></Footer>
     </>
